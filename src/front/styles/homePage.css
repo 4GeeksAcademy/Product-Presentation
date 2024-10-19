@@ -1,0 +1,191 @@
+/* Estilo general */
+.home-container {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) blur(2px);
+}
+
+/* Capa de contenido */
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Secciones */
+.section {
+    padding: 60px 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sección de introducción */
+.section-intro {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(103, 58, 183, 0.8) 100%);
+}
+
+.section-intro h1 {
+    font-size: 4.5rem;
+    color: #d1c4e9;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.section-intro p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #bdbdbd;
+}
+
+/* Sección de producto con imagen */
+.section-product {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 60px 20px; 
+}
+.text-content {
+    flex: 1; 
+    padding: 20px;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+    color: #b699ff;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.media-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.media-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de características */
+.section-features {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 60px 20px;
+    background-attachment: fixed; 
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(103, 58, 183, 0.3);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #d1c4e9;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Sección de video */
+.section-video {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-video video {
+    width: 80%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de llamada a la acción */
+.section-cta {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 20px; 
+}
+
+.section-cta h2 {
+    font-size: 3rem;
+    color: #b699ff;
+}
+
+.section-cta p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.cta-button {
+    background-color: #673ab7;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #512da8;
+    transform: scale(1.05);
+}

@@ -1,0 +1,70 @@
+/* Navbar general */
+.navbar {
+    background: linear-gradient(90deg, rgba(103, 58, 183, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Enlaces del navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #b699ff;
+}
+
+/* Botones */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: #673ab7;
+    color: #ffffff;
+}
+
+.primary:hover {
+    background-color: #512da8;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #673ab7;
+}
+
+.secondary:hover {
+    background-color: #673ab7;
+    color: #ffffff;
+}
